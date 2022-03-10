@@ -1,0 +1,12 @@
+version: '2.2'
+services:
+  studentregistration:
+        build:
+          context: ./
+          dockerfile: Dockerfile
+        ports:
+            - '8080:8080'
+        image: studentregistration
+        mem_limit: "256m"
+        cpu_count: 1
+        cpu_percent: 50
